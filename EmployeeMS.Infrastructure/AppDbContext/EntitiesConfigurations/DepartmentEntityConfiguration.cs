@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EmployeeMS.Domain.Entities
+namespace EmployeeMS.Infrastructure.AppDbContext.EntitiesConfigurations
 {
-    internal class positions
+    internal class DepartmentEntityConfiguration
     {
     }
 }

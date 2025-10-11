@@ -1,7 +1,36 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\Other\\M.F.projects\\EmployeeMS\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FB9F8142-0C23-4D2A-877B-CA898BC99B47}|EmployeeMS.Domain\\EmployeeMS.Domain.csproj|e:\\other\\m.f.projects\\employeems\\employeems.domain\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB9F8142-0C23-4D2A-877B-CA898BC99B47}|EmployeeMS.Domain\\EmployeeMS.Domain.csproj|solutionrelative:employeems.domain\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB9F8142-0C23-4D2A-877B-CA898BC99B47}|EmployeeMS.Domain\\EmployeeMS.Domain.csproj|e:\\other\\m.f.projects\\employeems\\employeems.domain\\entities\\profession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB9F8142-0C23-4D2A-877B-CA898BC99B47}|EmployeeMS.Domain\\EmployeeMS.Domain.csproj|solutionrelative:employeems.domain\\entities\\profession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ECD736-B0BE-4F8B-86EB-62EF14BD64F4}|EmployeeMS.Infrastructure\\EmployeeMS.Infrastructure.csproj|e:\\other\\m.f.projects\\employeems\\employeems.infrastructure\\appdbcontext\\entitiesconfigurations\\professionentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66ECD736-B0BE-4F8B-86EB-62EF14BD64F4}|EmployeeMS.Infrastructure\\EmployeeMS.Infrastructure.csproj|solutionrelative:employeems.infrastructure\\appdbcontext\\entitiesconfigurations\\professionentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ECD736-B0BE-4F8B-86EB-62EF14BD64F4}|EmployeeMS.Infrastructure\\EmployeeMS.Infrastructure.csproj|e:\\other\\m.f.projects\\employeems\\employeems.infrastructure\\appdbcontext\\entitiesconfigurations\\employeeentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66ECD736-B0BE-4F8B-86EB-62EF14BD64F4}|EmployeeMS.Infrastructure\\EmployeeMS.Infrastructure.csproj|solutionrelative:employeems.infrastructure\\appdbcontext\\entitiesconfigurations\\employeeentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ECD736-B0BE-4F8B-86EB-62EF14BD64F4}|EmployeeMS.Infrastructure\\EmployeeMS.Infrastructure.csproj|e:\\other\\m.f.projects\\employeems\\employeems.infrastructure\\appdbcontext\\entitiesconfigurations\\departmententityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66ECD736-B0BE-4F8B-86EB-62EF14BD64F4}|EmployeeMS.Infrastructure\\EmployeeMS.Infrastructure.csproj|solutionrelative:employeems.infrastructure\\appdbcontext\\entitiesconfigurations\\departmententityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ECD736-B0BE-4F8B-86EB-62EF14BD64F4}|EmployeeMS.Infrastructure\\EmployeeMS.Infrastructure.csproj|e:\\other\\m.f.projects\\employeems\\employeems.infrastructure\\appdbcontext\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66ECD736-B0BE-4F8B-86EB-62EF14BD64F4}|EmployeeMS.Infrastructure\\EmployeeMS.Infrastructure.csproj|solutionrelative:employeems.infrastructure\\appdbcontext\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB9F8142-0C23-4D2A-877B-CA898BC99B47}|EmployeeMS.Domain\\EmployeeMS.Domain.csproj|e:\\other\\m.f.projects\\employeems\\employeems.domain\\entities\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB9F8142-0C23-4D2A-877B-CA898BC99B47}|EmployeeMS.Domain\\EmployeeMS.Domain.csproj|solutionrelative:employeems.domain\\entities\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -18,6 +47,97 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProfessionEntityConfiguration.cs",
+              "DocumentMoniker": "E:\\Other\\M.F.projects\\EmployeeMS\\EmployeeMS.Infrastructure\\AppDbContext\\EntitiesConfigurations\\ProfessionEntityConfiguration.cs",
+              "RelativeDocumentMoniker": "EmployeeMS.Infrastructure\\AppDbContext\\EntitiesConfigurations\\ProfessionEntityConfiguration.cs",
+              "ToolTip": "E:\\Other\\M.F.projects\\EmployeeMS\\EmployeeMS.Infrastructure\\AppDbContext\\EntitiesConfigurations\\ProfessionEntityConfiguration.cs",
+              "RelativeToolTip": "EmployeeMS.Infrastructure\\AppDbContext\\EntitiesConfigurations\\ProfessionEntityConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T11:12:52.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmployeeEntityconfiguration.cs",
+              "DocumentMoniker": "E:\\Other\\M.F.projects\\EmployeeMS\\EmployeeMS.Infrastructure\\AppDbContext\\EntitiesConfigurations\\EmployeeEntityconfiguration.cs",
+              "RelativeDocumentMoniker": "EmployeeMS.Infrastructure\\AppDbContext\\EntitiesConfigurations\\EmployeeEntityconfiguration.cs",
+              "ToolTip": "E:\\Other\\M.F.projects\\EmployeeMS\\EmployeeMS.Infrastructure\\AppDbContext\\EntitiesConfigurations\\EmployeeEntityconfiguration.cs",
+              "RelativeToolTip": "EmployeeMS.Infrastructure\\AppDbContext\\EntitiesConfigurations\\EmployeeEntityconfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T11:11:44.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DepartmentEntityConfiguration.cs",
+              "DocumentMoniker": "E:\\Other\\M.F.projects\\EmployeeMS\\EmployeeMS.Infrastructure\\AppDbContext\\EntitiesConfigurations\\DepartmentEntityConfiguration.cs",
+              "RelativeDocumentMoniker": "EmployeeMS.Infrastructure\\AppDbContext\\EntitiesConfigurations\\DepartmentEntityConfiguration.cs",
+              "ToolTip": "E:\\Other\\M.F.projects\\EmployeeMS\\EmployeeMS.Infrastructure\\AppDbContext\\EntitiesConfigurations\\DepartmentEntityConfiguration.cs",
+              "RelativeToolTip": "EmployeeMS.Infrastructure\\AppDbContext\\EntitiesConfigurations\\DepartmentEntityConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T11:11:20.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Profession.cs",
+              "DocumentMoniker": "E:\\Other\\M.F.projects\\EmployeeMS\\EmployeeMS.Domain\\Entities\\Profession.cs",
+              "RelativeDocumentMoniker": "EmployeeMS.Domain\\Entities\\Profession.cs",
+              "ToolTip": "E:\\Other\\M.F.projects\\EmployeeMS\\EmployeeMS.Domain\\Entities\\Profession.cs",
+              "RelativeToolTip": "EmployeeMS.Domain\\Entities\\Profession.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T11:07:05.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "E:\\Other\\M.F.projects\\EmployeeMS\\EmployeeMS.Domain\\Entities\\Employee.cs",
+              "RelativeDocumentMoniker": "EmployeeMS.Domain\\Entities\\Employee.cs",
+              "ToolTip": "E:\\Other\\M.F.projects\\EmployeeMS\\EmployeeMS.Domain\\Entities\\Employee.cs",
+              "RelativeToolTip": "EmployeeMS.Domain\\Entities\\Employee.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T11:07:58.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "E:\\Other\\M.F.projects\\EmployeeMS\\EmployeeMS.Infrastructure\\AppDbContext\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "EmployeeMS.Infrastructure\\AppDbContext\\ApplicationDbContext.cs",
+              "ToolTip": "E:\\Other\\M.F.projects\\EmployeeMS\\EmployeeMS.Infrastructure\\AppDbContext\\ApplicationDbContext.cs",
+              "RelativeToolTip": "EmployeeMS.Infrastructure\\AppDbContext\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T11:10:44.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Department.cs",
+              "DocumentMoniker": "E:\\Other\\M.F.projects\\EmployeeMS\\EmployeeMS.Domain\\Entities\\Department.cs",
+              "RelativeDocumentMoniker": "EmployeeMS.Domain\\Entities\\Department.cs",
+              "ToolTip": "E:\\Other\\M.F.projects\\EmployeeMS\\EmployeeMS.Domain\\Entities\\Department.cs",
+              "RelativeToolTip": "EmployeeMS.Domain\\Entities\\Department.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T11:04:58.866Z",
+              "EditorCaption": ""
             }
           ]
         }

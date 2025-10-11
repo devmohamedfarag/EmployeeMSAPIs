@@ -1,0 +1,12 @@
+E:\Other\M.F.projects\EmployeeMS\EmployeeMS.Domain\bin\Debug\net8.0\EmployeeMS.Domain.deps.json
+E:\Other\M.F.projects\EmployeeMS\EmployeeMS.Domain\bin\Debug\net8.0\EmployeeMS.Domain.dll
+E:\Other\M.F.projects\EmployeeMS\EmployeeMS.Domain\bin\Debug\net8.0\EmployeeMS.Domain.pdb
+E:\Other\M.F.projects\EmployeeMS\EmployeeMS.Domain\obj\Debug\net8.0\EmployeeMS.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Other\M.F.projects\EmployeeMS\EmployeeMS.Domain\obj\Debug\net8.0\EmployeeMS.Domain.AssemblyInfoInputs.cache
+E:\Other\M.F.projects\EmployeeMS\EmployeeMS.Domain\obj\Debug\net8.0\EmployeeMS.Domain.AssemblyInfo.cs
+E:\Other\M.F.projects\EmployeeMS\EmployeeMS.Domain\obj\Debug\net8.0\EmployeeMS.Domain.csproj.CoreCompileInputs.cache
+E:\Other\M.F.projects\EmployeeMS\EmployeeMS.Domain\obj\Debug\net8.0\EmployeeMS.Domain.sourcelink.json
+E:\Other\M.F.projects\EmployeeMS\EmployeeMS.Domain\obj\Debug\net8.0\EmployeeMS.Domain.dll
+E:\Other\M.F.projects\EmployeeMS\EmployeeMS.Domain\obj\Debug\net8.0\refint\EmployeeMS.Domain.dll
+E:\Other\M.F.projects\EmployeeMS\EmployeeMS.Domain\obj\Debug\net8.0\EmployeeMS.Domain.pdb
+E:\Other\M.F.projects\EmployeeMS\EmployeeMS.Domain\obj\Debug\net8.0\ref\EmployeeMS.Domain.dll

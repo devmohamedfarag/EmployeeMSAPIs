@@ -1,0 +1,12 @@
+E:\Other\M.F.projects\EmployeeMS\EmployeeMS.Infrastructure\bin\Debug\net8.0\EmployeeMS.Infrastructure.deps.json
+E:\Other\M.F.projects\EmployeeMS\EmployeeMS.Infrastructure\bin\Debug\net8.0\EmployeeMS.Infrastructure.dll
+E:\Other\M.F.projects\EmployeeMS\EmployeeMS.Infrastructure\bin\Debug\net8.0\EmployeeMS.Infrastructure.pdb
+E:\Other\M.F.projects\EmployeeMS\EmployeeMS.Infrastructure\obj\Debug\net8.0\EmployeeMS.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\Other\M.F.projects\EmployeeMS\EmployeeMS.Infrastructure\obj\Debug\net8.0\EmployeeMS.Infrastructure.AssemblyInfoInputs.cache
+E:\Other\M.F.projects\EmployeeMS\EmployeeMS.Infrastructure\obj\Debug\net8.0\EmployeeMS.Infrastructure.AssemblyInfo.cs
+E:\Other\M.F.projects\EmployeeMS\EmployeeMS.Infrastructure\obj\Debug\net8.0\EmployeeMS.Infrastructure.csproj.CoreCompileInputs.cache
+E:\Other\M.F.projects\EmployeeMS\EmployeeMS.Infrastructure\obj\Debug\net8.0\EmployeeMS.Infrastructure.sourcelink.json
+E:\Other\M.F.projects\EmployeeMS\EmployeeMS.Infrastructure\obj\Debug\net8.0\EmployeeMS.Infrastructure.dll
+E:\Other\M.F.projects\EmployeeMS\EmployeeMS.Infrastructure\obj\Debug\net8.0\refint\EmployeeMS.Infrastructure.dll
+E:\Other\M.F.projects\EmployeeMS\EmployeeMS.Infrastructure\obj\Debug\net8.0\EmployeeMS.Infrastructure.pdb
+E:\Other\M.F.projects\EmployeeMS\EmployeeMS.Infrastructure\obj\Debug\net8.0\ref\EmployeeMS.Infrastructure.dll

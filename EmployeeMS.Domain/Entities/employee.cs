@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace EmployeeMS.Domain.Entities
 {
-    internal class employee
+    internal class Employee
     {
+
     }
 }
