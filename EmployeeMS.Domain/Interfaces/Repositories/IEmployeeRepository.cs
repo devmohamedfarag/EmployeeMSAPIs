@@ -1,6 +1,6 @@
 ﻿using EmployeeMS.Domain.Entities;
 
-namespace EmployeeMS.Domain.Interfaces
+namespace EmployeeMS.Domain.Interfaces.Repositories
 {
     public interface IEmployeeRepository : IGenericRepository<Employee>
     {

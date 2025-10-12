@@ -1,5 +1,5 @@
 ﻿using EmployeeMS.Domain.Entities;
-using EmployeeMS.Domain.Interfaces;
+using EmployeeMS.Domain.Interfaces.Repositories;
 using EmployeeMS.Infrastructure.AppDbContext;
 using Microsoft.EntityFrameworkCore;
 
