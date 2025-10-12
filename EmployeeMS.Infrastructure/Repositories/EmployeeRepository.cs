@@ -1,20 +1,24 @@
 ﻿using EmployeeMS.Domain.Entities;
+using EmployeeMS.Domain.Interfaces;
 using EmployeeMS.Infrastructure.AppDbContext;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace EmployeeMS.Infrastructure.Repositories
 {
-    public class EmployeeRepository : GenericRepository<Employee>
+    public class EmployeeRepository : GenericRepository<Employee>, IEmployeeRepository
     {
         private readonly ApplicationDbContext _dbcontext;
 
         public EmployeeRepository(ApplicationDbContext dbcontext) : base(dbcontext)
         {
             _dbcontext = dbcontext;
+        }
+
+        public async Task<IEnumerable<Employee>> GetEmployeeByFirstNameAsync(string firstname)
+        {
+            return await _dbcontext.Employees
+                                         .Where(e => e.FirstName == firstname)
+                                         .ToListAsync();
         }
     }
 }
