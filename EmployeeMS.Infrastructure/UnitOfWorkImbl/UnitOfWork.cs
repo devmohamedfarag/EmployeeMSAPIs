@@ -16,14 +16,19 @@ namespace EmployeeMS.Infrastructure.UnitOfWorkImbl
     {
         private readonly ApplicationDbContext _dbcontext;
 
-        public IEmployeeRepository Employees { get; private set; }
-        public IGenericRepository<Department> Departments { get; private set; }
-        public IGenericRepository<Profession> Professions { get; private set; }
+        public IEmployeeRepository Employees { get;}
+        public IGenericRepository<Department> Departments { get;}
+        public IGenericRepository<Profession> Professions { get;}
 
 
         public UnitOfWork(ApplicationDbContext dbcontext)
         {
             _dbcontext = dbcontext;
+
+            Employees = new EmployeeRepository(_dbcontext);
+            Departments = new GenericRepository<Department>(_dbcontext);
+            Professions = new GenericRepository<Profession>(_dbcontext);
+
         }
 
         public async Task<int> Compelete()

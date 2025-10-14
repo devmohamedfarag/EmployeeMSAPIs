@@ -1,9 +1,4 @@
-using EmployeeMS.Domain.Interfaces.UnitOfWork;
 using EmployeeMS.Infrastructure;
-using EmployeeMS.Infrastructure.AppDbContext;
-using EmployeeMS.Infrastructure.UnitOfWorkImbl;
-using Microsoft.EntityFrameworkCore;
-using System;
 
 var builder = WebApplication.CreateBuilder(args);
 
