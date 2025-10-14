@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EmployeeMS.Infrastructure.Repositories
+namespace EmployeeMS.Infrastructure.Implementations.Repositories
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
@@ -41,7 +41,7 @@ namespace EmployeeMS.Infrastructure.Repositories
         public async Task Update(T entity)
         {
             _dbSet.Update(entity);
-           await  _dbcontext.SaveChangesAsync();
+            await _dbcontext.SaveChangesAsync();
         }
 
         public async Task Delete(T entity)

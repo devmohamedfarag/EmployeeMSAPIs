@@ -1,8 +1,8 @@
 ﻿using EmployeeMS.Domain.Interfaces.Repositories;
 using EmployeeMS.Domain.Interfaces.UnitOfWork;
 using EmployeeMS.Infrastructure.AppDbContext;
-using EmployeeMS.Infrastructure.Repositories;
-using EmployeeMS.Infrastructure.UnitOfWorkImbl;
+using EmployeeMS.Infrastructure.Implementations.Repositories;
+using EmployeeMS.Infrastructure.Implementations.UnitOfWork;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;

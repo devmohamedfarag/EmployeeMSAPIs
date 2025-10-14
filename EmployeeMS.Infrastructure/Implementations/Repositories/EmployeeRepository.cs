@@ -3,7 +3,7 @@ using EmployeeMS.Domain.Interfaces.Repositories;
 using EmployeeMS.Infrastructure.AppDbContext;
 using Microsoft.EntityFrameworkCore;
 
-namespace EmployeeMS.Infrastructure.Repositories
+namespace EmployeeMS.Infrastructure.Implementations.Repositories
 {
     public class EmployeeRepository : GenericRepository<Employee>, IEmployeeRepository
     {
