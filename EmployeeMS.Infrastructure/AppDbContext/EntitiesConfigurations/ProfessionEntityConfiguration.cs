@@ -25,7 +25,7 @@ namespace EmployeeMS.Infrastructure.AppDbContext.EntitiesConfigurations
 
             builder.HasMany(p => p.Employees)
                    .WithOne(e => e.Profession)
-                   .HasForeignKey(e => e.Profession)
+                   .HasForeignKey(e => e.ProfessionId)
                    .OnDelete(DeleteBehavior.Restrict);
         }
     }
