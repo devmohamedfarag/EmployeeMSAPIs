@@ -1,10 +1,5 @@
 ﻿using EmployeeMS.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 
@@ -12,7 +7,7 @@ namespace EmployeeMS.Infrastructure.AppDbContext.EntitiesConfigurations
 {
     public class ProfessionEntityConfiguration : IEntityTypeConfiguration<Profession>
     {
-      
+
         public void Configure(EntityTypeBuilder<Profession> builder)
         {
             builder.HasKey(p => p.Id);
@@ -34,5 +29,5 @@ namespace EmployeeMS.Infrastructure.AppDbContext.EntitiesConfigurations
                    .OnDelete(DeleteBehavior.Restrict);
         }
     }
-    
+
 }
