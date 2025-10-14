@@ -24,10 +24,6 @@ namespace EmployeeMS.Infrastructure.UnitOfWorkImbl
         public UnitOfWork(ApplicationDbContext dbcontext)
         {
             _dbcontext = dbcontext;
-
-            Employees = new EmployeeRepository(_dbcontext);
-            Departments = new GenericRepository<Department>(_dbcontext);
-            Professions = new GenericRepository<Profession>(_dbcontext);
         }
 
         public async Task<int> Compelete()

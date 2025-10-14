@@ -1,5 +1,8 @@
 using EmployeeMS.Domain.Interfaces.UnitOfWork;
+using EmployeeMS.Infrastructure;
+using EmployeeMS.Infrastructure.AppDbContext;
 using EmployeeMS.Infrastructure.UnitOfWorkImbl;
+using Microsoft.EntityFrameworkCore;
 using System;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,9 +14,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-
-
+builder.Services.AddPersistanceLayerServices(builder.Configuration);
 
 var app = builder.Build();
 
