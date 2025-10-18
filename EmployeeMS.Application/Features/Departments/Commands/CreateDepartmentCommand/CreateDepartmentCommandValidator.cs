@@ -1,9 +1,4 @@
 ﻿using FluentValidation;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EmployeeMS.Application.Features.Departments.Commands.CreateDepartmentCommand
 {
@@ -18,7 +13,6 @@ namespace EmployeeMS.Application.Features.Departments.Commands.CreateDepartmentC
             RuleFor(x => x.Description)
                 .NotEmpty().WithMessage("Description Is Required")
                 .MaximumLength(300);
-            
         }
     }
 }

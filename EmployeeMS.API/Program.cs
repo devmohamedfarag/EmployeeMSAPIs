@@ -1,4 +1,5 @@
 using EmployeeMS.Infrastructure;
+using EmployeeMS.Application;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +11,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddPersistanceLayerServices(builder.Configuration);
+builder.Services.AddApplicationLayerServices();
 
 var app = builder.Build();
 

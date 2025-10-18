@@ -8,10 +8,11 @@
 
 	<ItemGroup>
 		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
-		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.9"/>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.9" />
   </ItemGroup>
 
 	<ItemGroup>
+		<ProjectReference Include="..\EmployeeMS.Application\EmployeeMS.Application.csproj" />
 		<ProjectReference Include="..\EmployeeMS.Infrastructure\EmployeeMS.Infrastructure.csproj" />
 	</ItemGroup>
 
