@@ -22,6 +22,7 @@ namespace EmployeeMS.Infrastructure
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 
+
             return services;
         }
     }

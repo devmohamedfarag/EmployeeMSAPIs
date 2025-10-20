@@ -1,15 +1,17 @@
+using EmployeeMS.Application;
 using EmployeeMS.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddControllers();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddPersistanceLayerServices(builder.Configuration);
+builder.Services.AddApplicationLayerServices();
 
 var app = builder.Build();
 

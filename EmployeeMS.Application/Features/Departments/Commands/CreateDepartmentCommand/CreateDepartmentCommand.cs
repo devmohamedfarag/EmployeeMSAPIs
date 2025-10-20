@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MediatR;
 
 namespace EmployeeMS.Application.Features.Departments.Commands.CreateDepartmentCommand
 {
-    internal class CreateDepartmentCommand
+    public class CreateDepartmentCommand : IRequest<int>
     {
+        public string Name {  get; set; }
+        public string Description { get; set; }
     }
 }
