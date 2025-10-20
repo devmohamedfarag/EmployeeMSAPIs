@@ -7,19 +7,20 @@ namespace EmployeeMS.API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class DepartmentController : ControllerBase
+    public class DepartmentController(IMediator mediator) : ControllerBase
     {
-       private readonly IMediator _mediator;
+       /*
+        private readonly IMediator _mediator;
 
         public DepartmentController(IMediator mediator)
         {
             _mediator = mediator;
-        }
+        }*/
 
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] CreateDepartmentCommand command)
         {
-            var id = await _mediator.Send(command);
+            var id = await mediator.Send(command);
 
             return Ok(new { DeparmentId = id });
         }

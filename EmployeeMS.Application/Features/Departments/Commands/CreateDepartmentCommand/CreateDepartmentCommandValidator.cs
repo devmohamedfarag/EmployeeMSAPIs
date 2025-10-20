@@ -7,12 +7,12 @@ namespace EmployeeMS.Application.Features.Departments.Commands.CreateDepartmentC
         public CreateDepartmentCommandValidator()
         {
             RuleFor(x => x.Name)
-                .NotEmpty().WithMessage("Name Is Required")
-                .MaximumLength(100);
+                .NotEmpty().WithMessage("Department name is required")
+                .MaximumLength(100).WithMessage("Department name must be less than or equal to 100 charchters");
             
             RuleFor(x => x.Description)
-                .NotEmpty().WithMessage("Description Is Required")
-                .MaximumLength(300);
+                .NotEmpty().WithMessage("Department description is required")
+                .MaximumLength(300).WithMessage("Department description must be less than or equal to 300 charchters");
         }
     }
 }
