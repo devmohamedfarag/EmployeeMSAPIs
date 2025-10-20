@@ -9,14 +9,6 @@ namespace EmployeeMS.API.Controllers
     [Route("api/[controller]")]
     public class DepartmentController(IMediator mediator) : ControllerBase
     {
-       /*
-        private readonly IMediator _mediator;
-
-        public DepartmentController(IMediator mediator)
-        {
-            _mediator = mediator;
-        }*/
-
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] CreateDepartmentCommand command)
         {

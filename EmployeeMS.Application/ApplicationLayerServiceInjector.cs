@@ -1,6 +1,4 @@
-﻿using EmployeeMS.Application.Features.Departments.Commands.CreateDepartmentCommand;
-using EmployeeMS.Application.Mappings;
-using FluentValidation;
+﻿using FluentValidation;
 using FluentValidation.AspNetCore;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
