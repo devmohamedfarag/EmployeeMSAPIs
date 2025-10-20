@@ -1,5 +1,6 @@
 using EmployeeMS.Application;
 using EmployeeMS.Infrastructure;
+using EmployeeMS.Shared;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,8 +13,11 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddPersistanceLayerServices(builder.Configuration);
 builder.Services.AddApplicationLayerServices();
+builder.Services.AddSharedLayerServices();
 
 var app = builder.Build();
+
+app.UseSharedLayerLocalization();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
