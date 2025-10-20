@@ -1,4 +1,6 @@
-﻿using FluentValidation;
+﻿using EmployeeMS.Shared.Constants;
+using EmployeeMS.Shared.LocalizationResources;
+using FluentValidation;
 
 namespace EmployeeMS.Application.Features.Departments.Commands.CreateDepartmentCommand
 {
@@ -7,12 +9,12 @@ namespace EmployeeMS.Application.Features.Departments.Commands.CreateDepartmentC
         public CreateDepartmentCommandValidator()
         {
             RuleFor(x => x.Name)
-                .NotEmpty().WithMessage("Department name is required")
-                .MaximumLength(100).WithMessage("Department name must be less than or equal to 100 charchters");
+                .NotEmpty().WithMessage(Resource.DepartmentNameRequired)
+                .MaximumLength(ValidationConstants.ShortStringLength).WithMessage(Resource.DepartmentNameLength);
             
             RuleFor(x => x.Description)
-                .NotEmpty().WithMessage("Department description is required")
-                .MaximumLength(300).WithMessage("Department description must be less than or equal to 300 charchters");
+                .NotEmpty().WithMessage(Resource.DeparmentDescriptionRequired)
+                .MaximumLength(ValidationConstants.LongStringLength).WithMessage(Resource.DepartmentDescriptionLength);
         }
     }
 }
