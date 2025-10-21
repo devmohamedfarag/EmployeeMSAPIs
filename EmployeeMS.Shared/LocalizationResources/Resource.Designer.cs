@@ -70,6 +70,15 @@ namespace EmployeeMS.Shared.LocalizationResources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Department deleted successfully.
+        /// </summary>
+        public static string DepartmentDeleted {
+            get {
+                return ResourceManager.GetString("DepartmentDeleted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Department description length is less than or equal 300 characters.
         /// </summary>
         public static string DepartmentDescriptionLength {
@@ -93,6 +102,33 @@ namespace EmployeeMS.Shared.LocalizationResources {
         public static string DepartmentNameRequired {
             get {
                 return ResourceManager.GetString("DepartmentNameRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Department is not found.
+        /// </summary>
+        public static string DepartmentNotFound {
+            get {
+                return ResourceManager.GetString("DepartmentNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Department Id does not match.
+        /// </summary>
+        public static string DepatrmentIdNotMatch {
+            get {
+                return ResourceManager.GetString("DepatrmentIdNotMatch", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The Id is Greater than zero.
+        /// </summary>
+        public static string IdIsGreaterThan0 {
+            get {
+                return ResourceManager.GetString("IdIsGreaterThan0", resourceCulture);
             }
         }
     }

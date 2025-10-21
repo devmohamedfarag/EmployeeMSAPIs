@@ -7,12 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EmployeeMS.Domain\EmployeeMS.Domain.csproj" />
+    <ProjectReference Include="..\EmployeeMS.Infrastructure\EmployeeMS.Infrastructure.csproj" />
     <ProjectReference Include="..\EmployeeMS.Shared\EmployeeMS.Shared.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Departments\Queries\" />
     <Folder Include="Features\Employees\" />
     <Folder Include="Features\Professions\" />
   </ItemGroup>

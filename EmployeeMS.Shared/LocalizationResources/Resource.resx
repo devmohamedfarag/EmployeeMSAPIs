@@ -120,6 +120,9 @@
   <data name="DeparmentDescriptionRequired" xml:space="preserve">
     <value>Department description is required</value>
   </data>
+  <data name="DepartmentDeleted" xml:space="preserve">
+    <value>Department deleted successfully</value>
+  </data>
   <data name="DepartmentDescriptionLength" xml:space="preserve">
     <value>Department description length is less than or equal 300 characters</value>
   </data>
@@ -128,5 +131,14 @@
   </data>
   <data name="DepartmentNameRequired" xml:space="preserve">
     <value>Department name is requried</value>
+  </data>
+  <data name="DepartmentNotFound" xml:space="preserve">
+    <value>Department is not found</value>
+  </data>
+  <data name="DepatrmentIdNotMatch" xml:space="preserve">
+    <value>Department Id does not match</value>
+  </data>
+  <data name="IdIsGreaterThan0" xml:space="preserve">
+    <value>The Id is Greater than zero</value>
   </data>
 </root>

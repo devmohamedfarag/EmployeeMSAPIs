@@ -120,6 +120,9 @@
   <data name="DeparmentDescriptionRequired" xml:space="preserve">
     <value>وصف القسم مطلوب </value>
   </data>
+  <data name="DepartmentDeleted" xml:space="preserve">
+    <value>تم حذف القسم بنجاح</value>
+  </data>
   <data name="DepartmentDescriptionLength" xml:space="preserve">
     <value>وصف القسم يجب ألا يزيد عن 300 حرف</value>
   </data>
@@ -128,5 +131,14 @@
   </data>
   <data name="DepartmentNameRequired" xml:space="preserve">
     <value>اسم القسم مطلوب</value>
+  </data>
+  <data name="DepartmentNotFound" xml:space="preserve">
+    <value>القسم غير موجود</value>
+  </data>
+  <data name="DepatrmentIdNotMatch" xml:space="preserve">
+    <value>رقم القسم غير متوافق</value>
+  </data>
+  <data name="IdIsGreaterThan0" xml:space="preserve">
+    <value>رقم القسم يجب ان يكون اكبر من صفر</value>
   </data>
 </root>

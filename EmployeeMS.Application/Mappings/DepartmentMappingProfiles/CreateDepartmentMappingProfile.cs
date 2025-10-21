@@ -2,14 +2,13 @@
 using EmployeeMS.Application.Features.Departments.Commands.CreateDepartmentCommand;
 using EmployeeMS.Domain.Entities;
 
-namespace EmployeeMS.Application.Mappings
+namespace EmployeeMS.Application.Mappings.DepartmentMappingProfiles
 {
-    public class DepartmentMappingProfile : Profile
+    public class CreateDepartmentMappingProfile : Profile
     {
-        public DepartmentMappingProfile()
+        public CreateDepartmentMappingProfile()
         {
             CreateMap<CreateDepartmentCommand, Department>();
-
         }
     }
 }

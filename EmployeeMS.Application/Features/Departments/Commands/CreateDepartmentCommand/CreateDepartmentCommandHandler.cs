@@ -5,7 +5,8 @@ using MediatR;
 
 namespace EmployeeMS.Application.Features.Departments.Commands.CreateDepartmentCommand
 {
-    public class CreateDepartmentCommandHandler(IUnitOfWork unitOfWork, IMapper mapper) : IRequestHandler<CreateDepartmentCommand, int>
+    public class CreateDepartmentCommandHandler(IUnitOfWork unitOfWork, IMapper mapper) 
+                                                  : IRequestHandler<CreateDepartmentCommand, int>
     {
         public async Task<int> Handle(CreateDepartmentCommand request, CancellationToken cancellationToken)
         {
