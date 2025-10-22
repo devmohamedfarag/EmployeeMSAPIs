@@ -10,23 +10,23 @@ using Microsoft.EntityFrameworkCore;
 
 namespace EmployeeMS.Application.Features.Departments.Queries.GetAllDepartmentsQuery
 {
-    public class GetAllDepartmentsQueryHandler(IUnitOfWork unitOfWork, IMapper mapper, IReadOnlyRepository<Department> ReadonlyDepartmantRepository)
+    public class GetAllDepartmentsQueryHandler(IMapper mapper, IReadOnlyRepository<Department> readonlyDepartmantRepository)
                                                : IRequestHandler<GetAllDepartmentsQuery, PagedData<DepartmentDto>>
     {
         public async Task<PagedData<DepartmentDto>> Handle(GetAllDepartmentsQuery request, CancellationToken cancellationToken)
         {
-            var query = ReadonlyDepartmantRepository.GetAll();
-           
+            var query = readonlyDepartmantRepository.GetAllAsync();
+
             var departments = await query
-                .ProjectTo<DepartmentDto>(mapper.ConfigurationProvider)
                 .Skip((request.PageNumber - 1) * request.PageSize)
                 .Take(request.PageSize)
+                .ProjectTo<DepartmentDto>(mapper.ConfigurationProvider)
                 .ToListAsync(cancellationToken);
 
             var totalCount = await query.CountAsync(cancellationToken);
 
             return new PagedData<DepartmentDto>(
-                departments.AsQueryable(),
+                departments,
                 request.PageSize,
                 request.PageNumber,
                 totalCount);

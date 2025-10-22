@@ -7,7 +7,7 @@ namespace EmployeeMS.Infrastructure.Implementations.Repositories
 {
     public class ReadOnlyRepository<TEntity>(ApplicationDbContext dbContext) : IReadOnlyRepository<TEntity> where TEntity : class
     {
-        public IQueryable<TEntity> GetAll() 
+        public IQueryable<TEntity> GetAllAsync() 
             =>dbContext
             .Set<TEntity> ()
             .AsNoTracking()

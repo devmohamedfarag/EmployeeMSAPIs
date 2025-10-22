@@ -14,16 +14,16 @@ namespace EmployeeMS.API.Controllers
     public class DepartmentController(IMediator mediator) : ControllerBase
     {
         [HttpGet]
-        public async Task<IActionResult> GetAllDepartments([FromQuery] GetAllDepartmentsQuery request)
+        public async Task<IActionResult> GetAllDepartments([FromQuery] GetAllDepartmentsQuery query)
         {
-            var result = await mediator.Send(request);
+            var result = await mediator.Send(query);
             return Ok(result);
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetDepartmentById([FromRoute] GetDepartmentByIdQuery requst)
+        public async Task<IActionResult> GetDepartmentById([FromRoute] GetDepartmentByIdQuery query)
         {
-            var result = await mediator.Send(requst);
+            var result = await mediator.Send(query);
             return Ok(result);
         }
 
