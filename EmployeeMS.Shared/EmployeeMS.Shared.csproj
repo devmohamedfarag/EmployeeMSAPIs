@@ -23,7 +23,7 @@
 
   <ItemGroup>
     <EmbeddedResource Update="LocalizationResources\Resource.ar.resx">
-      <Generator></Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="LocalizationResources\Resource.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
