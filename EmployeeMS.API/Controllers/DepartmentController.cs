@@ -35,7 +35,7 @@ namespace EmployeeMS.API.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult>UbpadteDepartment([FromBody]UpdateDepartmentCommand command)
+        public async Task<IActionResult> UbpadteDepartment([FromBody] UpdateDepartmentCommand command)
         {
             var result = await mediator.Send(command);
             return Ok(result);
@@ -47,5 +47,5 @@ namespace EmployeeMS.API.Controllers
             var result = await mediator.Send(command);
             return Ok(result);
         }
-    } 
+    }
 }

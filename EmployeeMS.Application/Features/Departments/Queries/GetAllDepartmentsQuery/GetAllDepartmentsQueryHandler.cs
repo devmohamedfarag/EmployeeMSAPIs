@@ -3,7 +3,6 @@ using AutoMapper.QueryableExtensions;
 using EmployeeMS.Application.Dtos.DepartmentDtos;
 using EmployeeMS.Domain.Entities;
 using EmployeeMS.Domain.Interfaces.Repositories;
-using EmployeeMS.Domain.Interfaces.UnitOfWork;
 using EmployeeMS.Shared.Wrappers;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
@@ -15,7 +14,7 @@ namespace EmployeeMS.Application.Features.Departments.Queries.GetAllDepartmentsQ
     {
         public async Task<PagedData<DepartmentDto>> Handle(GetAllDepartmentsQuery request, CancellationToken cancellationToken)
         {
-            var query = readonlyDepartmantRepository.GetAllAsync();
+            var query = readonlyDepartmantRepository.GetAll();
 
             var departments = await query
                 .Skip((request.PageNumber - 1) * request.PageSize)
@@ -25,11 +24,13 @@ namespace EmployeeMS.Application.Features.Departments.Queries.GetAllDepartmentsQ
 
             var totalCount = await query.CountAsync(cancellationToken);
 
-            return new PagedData<DepartmentDto>(
+            return new PagedData<DepartmentDto>
+             (
                 departments,
                 request.PageSize,
                 request.PageNumber,
-                totalCount);
+                totalCount
+             );
         }
     }
 }
