@@ -135,9 +135,6 @@
   <data name="DepartmentNotFound" xml:space="preserve">
     <value>Department is not found</value>
   </data>
-  <data name="DepatrmentIdNotMatch" xml:space="preserve">
-    <value>Department Id does not match</value>
-  </data>
   <data name="IdIsGreaterThan0" xml:space="preserve">
     <value>The Id is Greater than zero</value>
   </data>

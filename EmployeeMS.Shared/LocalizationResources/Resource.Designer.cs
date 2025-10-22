@@ -115,15 +115,6 @@ namespace EmployeeMS.Shared.LocalizationResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Department Id does not match.
-        /// </summary>
-        public static string DepatrmentIdNotMatch {
-            get {
-                return ResourceManager.GetString("DepatrmentIdNotMatch", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to The Id is Greater than zero.
         /// </summary>
         public static string IdIsGreaterThan0 {

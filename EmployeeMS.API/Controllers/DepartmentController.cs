@@ -3,7 +3,6 @@ using EmployeeMS.Application.Features.Departments.Commands.DeleteDepartmentComma
 using EmployeeMS.Application.Features.Departments.Commands.UpdateDepartmentCommand;
 using EmployeeMS.Application.Features.Departments.Queries.GetAllDepartmentsQuery;
 using EmployeeMS.Application.Features.Departments.Queries.GetDepartmentByIdQuery;
-using EmployeeMS.Shared.LocalizationResources;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -15,18 +14,16 @@ namespace EmployeeMS.API.Controllers
     public class DepartmentController(IMediator mediator) : ControllerBase
     {
         [HttpGet]
-        public async Task<IActionResult> GetAllDepartments([FromQuery] int pageNumber = 1, [FromQuery] int pageSize = 10)
+        public async Task<IActionResult> GetAllDepartments([FromQuery] GetAllDepartmentsQuery request)
         {
-            var query = new GetAllDepartmentsQuery(pageNumber, pageSize);
-            var result = await mediator.Send(query);
+            var result = await mediator.Send(request);
             return Ok(result);
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetDepartmentById(int id)
+        public async Task<IActionResult> GetDepartmentById([FromRoute] GetDepartmentByIdQuery requst)
         {
-            var query = new GetDepartmentByIdQuery(id);
-            var result = await mediator.Send(query);
+            var result = await mediator.Send(requst);
             return Ok(result);
         }
 
@@ -34,28 +31,20 @@ namespace EmployeeMS.API.Controllers
         public async Task<IActionResult> Create([FromBody] CreateDepartmentCommand command)
         {
             var id = await mediator.Send(command);
-
             return Ok(new { DeparmentId = id });
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult>UbpadteDepartment(int id, UpdateDepartmentCommand command)
+        public async Task<IActionResult>UbpadteDepartment([FromBody]UpdateDepartmentCommand command)
         {
-            if (id != command.Id) 
-            {
-                return BadRequest(Resource.DepatrmentIdNotMatch);
-            }
-
             var result = await mediator.Send(command);
-
             return Ok(result);
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteDepartment(int id)
+        public async Task<IActionResult> DeleteDepartment([FromRoute] DeleteDepartmentCommand command)
         {
-            var result = await mediator.Send( new DeleteDepartmentCommand(id));
-
+            var result = await mediator.Send(command);
             return Ok(result);
         }
     } 

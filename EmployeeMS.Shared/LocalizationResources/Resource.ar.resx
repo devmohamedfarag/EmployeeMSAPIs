@@ -135,9 +135,6 @@
   <data name="DepartmentNotFound" xml:space="preserve">
     <value>القسم غير موجود</value>
   </data>
-  <data name="DepatrmentIdNotMatch" xml:space="preserve">
-    <value>رقم القسم غير متوافق</value>
-  </data>
   <data name="IdIsGreaterThan0" xml:space="preserve">
     <value>رقم القسم يجب ان يكون اكبر من صفر</value>
   </data>
