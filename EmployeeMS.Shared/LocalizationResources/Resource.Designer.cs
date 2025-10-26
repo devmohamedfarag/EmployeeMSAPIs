@@ -115,11 +115,191 @@ namespace EmployeeMS.Shared.LocalizationResources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Invalid email format.
+        /// </summary>
+        public static string EmailFormat {
+            get {
+                return ResourceManager.GetString("EmailFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Email is less than or equal to 100 characters.
+        /// </summary>
+        public static string EmailLength {
+            get {
+                return ResourceManager.GetString("EmailLength", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Employee deleted successfily.
+        /// </summary>
+        public static string EmployeeDeleted {
+            get {
+                return ResourceManager.GetString("EmployeeDeleted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Email name is required.
+        /// </summary>
+        public static string EmployeeEmailRequired {
+            get {
+                return ResourceManager.GetString("EmployeeEmailRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to First name is required.
+        /// </summary>
+        public static string EmployeeFirstNameRequired {
+            get {
+                return ResourceManager.GetString("EmployeeFirstNameRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Last name is required.
+        /// </summary>
+        public static string EmployeeLastNameRequired {
+            get {
+                return ResourceManager.GetString("EmployeeLastNameRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Employee is not found.
+        /// </summary>
+        public static string EmployeeNotFound {
+            get {
+                return ResourceManager.GetString("EmployeeNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Phone number name is required.
+        /// </summary>
+        public static string EmployeePhoneNumberRequired {
+            get {
+                return ResourceManager.GetString("EmployeePhoneNumberRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Salary is required.
+        /// </summary>
+        public static string EmployeeSalaryRequired {
+            get {
+                return ResourceManager.GetString("EmployeeSalaryRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to First name is less than or equal to 100 characters.
+        /// </summary>
+        public static string FirstNameLength {
+            get {
+                return ResourceManager.GetString("FirstNameLength", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The Id is Greater than zero.
         /// </summary>
         public static string IdIsGreaterThan0 {
             get {
                 return ResourceManager.GetString("IdIsGreaterThan0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Last name is less than or equal to 100 characters.
+        /// </summary>
+        public static string LastNameLength {
+            get {
+                return ResourceManager.GetString("LastNameLength", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Phone number is less than or equal to 20 characters.
+        /// </summary>
+        public static string PhoneNumberLength {
+            get {
+                return ResourceManager.GetString("PhoneNumberLength", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Profession salary is required.
+        /// </summary>
+        public static string ProfessionAcceptedSalaryIsrequired {
+            get {
+                return ResourceManager.GetString("ProfessionAcceptedSalaryIsrequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Profession deleted successfully.
+        /// </summary>
+        public static string ProfessionDeleted {
+            get {
+                return ResourceManager.GetString("ProfessionDeleted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Profession description length is less than or equal 300 characters.
+        /// </summary>
+        public static string ProfessionDescriptionLength {
+            get {
+                return ResourceManager.GetString("ProfessionDescriptionLength", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Profession description is required.
+        /// </summary>
+        public static string ProfessionDescriptionRequired {
+            get {
+                return ResourceManager.GetString("ProfessionDescriptionRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Profession is not found.
+        /// </summary>
+        public static string ProfessionNotFound {
+            get {
+                return ResourceManager.GetString("ProfessionNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Profession title length is less than or equal 100 characters.
+        /// </summary>
+        public static string ProfessionTitleLength {
+            get {
+                return ResourceManager.GetString("ProfessionTitleLength", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Profession title is required.
+        /// </summary>
+        public static string ProfessionTitleRequired {
+            get {
+                return ResourceManager.GetString("ProfessionTitleRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Salary must be greater than 0.
+        /// </summary>
+        public static string SalaryLength {
+            get {
+                return ResourceManager.GetString("SalaryLength", resourceCulture);
             }
         }
     }

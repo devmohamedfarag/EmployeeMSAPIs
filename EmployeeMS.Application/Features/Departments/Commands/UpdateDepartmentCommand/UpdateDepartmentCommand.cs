@@ -1,4 +1,4 @@
-﻿using EmployeeMS.Application.Dtos.DepartmentDtos;
+﻿using EmployeeMS.Application.Dtos;
 using MediatR;
 
 namespace EmployeeMS.Application.Features.Departments.Commands.UpdateDepartmentCommand

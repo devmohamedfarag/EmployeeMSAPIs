@@ -6,7 +6,9 @@
 
         public const int LongStringLength = 300;
 
-        public const int IdIsGreaterThan0 = 0;
+        public const int IsGreaterThan0 = 0;
+
+        public const int PhoneNumberLessThan20 = 20;
 
     }
 }

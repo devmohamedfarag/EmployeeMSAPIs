@@ -10,7 +10,7 @@ namespace EmployeeMS.Application.Features.Departments.Queries.GetDepartmentByIdQ
         public GetDepartmentByIdValidator()
         {
             RuleFor(x => x.Id)
-                .GreaterThan(ValidationConstants.IdIsGreaterThan0)
+                .GreaterThan(ValidationConstants.IsGreaterThan0)
                 .WithMessage(Resource.IdIsGreaterThan0);
         }
     }

@@ -9,7 +9,7 @@ namespace EmployeeMS.Application.Features.Departments.Commands.DeleteDepartmentC
         public DeleteDepartmentCommandValidator()
         {
             RuleFor(x => x.Id)
-                .GreaterThan(ValidationConstants.IdIsGreaterThan0)
+                .GreaterThan(ValidationConstants.IsGreaterThan0)
                 .WithMessage(Resource.IdIsGreaterThan0);
         }
     }

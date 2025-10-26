@@ -1,8 +1,9 @@
-﻿namespace EmployeeMS.Application.Dtos.DepartmentDtos
+﻿namespace EmployeeMS.Application.Dtos
 {
     public class DepartmentDto
     {
-        public string Name {  get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
         public string Description { get; set; }
         public DateTime CreationDate { get; set; }
     }

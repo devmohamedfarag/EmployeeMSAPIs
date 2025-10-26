@@ -28,7 +28,7 @@ namespace EmployeeMS.API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] CreateDepartmentCommand command)
+        public async Task<IActionResult> CreateDepartment([FromBody] CreateDepartmentCommand command)
         {
             var id = await mediator.Send(command);
             return Ok(new { DeparmentId = id });

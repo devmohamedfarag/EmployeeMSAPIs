@@ -7,11 +7,11 @@
         public int TotalCount { get; set; }
         public List<T> Items { get; set; }
 
-        public PagedData(List<T> items, int pageSize, int pageNumber, int totalCount)
+        public PagedData(List<T> items, int pageNumber, int pageSize, int totalCount)
         {
             Items = items;
-            PageSize = pageSize;
             PageNumber = pageNumber;
+            PageSize = pageSize;
             TotalCount = totalCount;
         }
     }

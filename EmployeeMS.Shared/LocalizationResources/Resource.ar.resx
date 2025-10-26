@@ -135,7 +135,67 @@
   <data name="DepartmentNotFound" xml:space="preserve">
     <value>القسم غير موجود</value>
   </data>
+  <data name="EmailFormat" xml:space="preserve">
+    <value>الايميل غير صحيح</value>
+  </data>
+  <data name="EmailLength" xml:space="preserve">
+    <value>الايميل يجب الا يزيد عن 100 حرف</value>
+  </data>
+  <data name="EmployeeDeleted" xml:space="preserve">
+    <value>تم حذ الموظف بنجاح</value>
+  </data>
+  <data name="EmployeeEmailRequired" xml:space="preserve">
+    <value>الايميل مطلوب</value>
+  </data>
+  <data name="EmployeeFirstNameRequired" xml:space="preserve">
+    <value>الاسم الاول مطلوب</value>
+  </data>
+  <data name="EmployeeLastNameRequired" xml:space="preserve">
+    <value>الاسم الاخير مطلوب</value>
+  </data>
+  <data name="EmployeeNotFound" xml:space="preserve">
+    <value>الموظف غير موجود</value>
+  </data>
+  <data name="EmployeePhoneNumberRequired" xml:space="preserve">
+    <value>رقم الهاتف مطلوب</value>
+  </data>
+  <data name="EmployeeSalaryRequired" xml:space="preserve">
+    <value>المرتب مطلوب</value>
+  </data>
+  <data name="FirstNameLength" xml:space="preserve">
+    <value>الاسم الاول يجب الا يزيد عن 100 حرف</value>
+  </data>
   <data name="IdIsGreaterThan0" xml:space="preserve">
-    <value>رقم القسم يجب ان يكون اكبر من صفر</value>
+    <value>الرقم يجب ان يكون اكبر من صفر</value>
+  </data>
+  <data name="LastNameLength" xml:space="preserve">
+    <value>الاسم الاخير يجب الا يزيد عن 100 حرف</value>
+  </data>
+  <data name="PhoneNumberLength" xml:space="preserve">
+    <value>رقم الهاتف يجب الا يزيد عن 20 حرف</value>
+  </data>
+  <data name="ProfessionAcceptedSalaryIsrequired" xml:space="preserve">
+    <value>المرتب مطلوب</value>
+  </data>
+  <data name="ProfessionDeleted" xml:space="preserve">
+    <value>تم حذف الوظيفة بنجاح</value>
+  </data>
+  <data name="ProfessionDescriptionLength" xml:space="preserve">
+    <value>وصف الوظيفة يجب ألا يزيد عن 300 حرف</value>
+  </data>
+  <data name="ProfessionDescriptionRequired" xml:space="preserve">
+    <value> وصف الوظيفة مطلوب</value>
+  </data>
+  <data name="ProfessionNotFound" xml:space="preserve">
+    <value>الوظيفة غير موجودة</value>
+  </data>
+  <data name="ProfessionTitleLength" xml:space="preserve">
+    <value>اسم الوظيفة يجب ألا يزيد عن 100 حرف</value>
+  </data>
+  <data name="ProfessionTitleRequired" xml:space="preserve">
+    <value>اسم الوظيفة مطلوب</value>
+  </data>
+  <data name="SalaryLength" xml:space="preserve">
+    <value>المرتب يجب ان يكون اكبر من صفر</value>
   </data>
 </root>

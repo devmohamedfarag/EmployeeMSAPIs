@@ -1,4 +1,4 @@
-﻿using EmployeeMS.Application.Dtos.DepartmentDtos;
+﻿using EmployeeMS.Application.Dtos;
 using EmployeeMS.Shared.Wrappers;
 using MediatR;
 
