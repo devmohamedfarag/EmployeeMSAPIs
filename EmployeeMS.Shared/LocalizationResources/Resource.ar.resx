@@ -168,6 +168,9 @@
   <data name="IdIsGreaterThan0" xml:space="preserve">
     <value>الرقم يجب ان يكون اكبر من صفر</value>
   </data>
+  <data name="InvalidPhoneNumberFormat" xml:space="preserve">
+    <value>رقم الهاتف غير صالح</value>
+  </data>
   <data name="LastNameLength" xml:space="preserve">
     <value>الاسم الاخير يجب الا يزيد عن 100 حرف</value>
   </data>

@@ -9,8 +9,7 @@ namespace EmployeeMS.Application.Features.Employees.Commands.UpdateEmployeeComma
                                         , string Email
                                         , string PhoneNumber
                                         , double Salary
+                                        , DateTime JoinDate
                                         , int DepartmentId
-                                        , int ProfessionId) : IRequest<EmployeeDto>
-    {
-    }
+                                        , int ProfessionId) : IRequest<EmployeeDto>;
 }

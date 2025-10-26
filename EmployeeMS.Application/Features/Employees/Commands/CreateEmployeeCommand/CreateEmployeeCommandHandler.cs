@@ -12,8 +12,6 @@ namespace EmployeeMS.Application.Features.Employees.Commands.CreateEmployeeComma
         {
             var employee = mapper.Map<Employee>(request);
 
-            employee.JoinDate = DateTime.UtcNow;
-
             await unitOfWork.Employees.AddAsync(employee);
             await unitOfWork.Compelete();
 

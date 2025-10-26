@@ -7,8 +7,7 @@ namespace EmployeeMS.Application.Features.Employees.Commands.CreateEmployeeComma
                                        , string Email
                                        , string PhoneNumber
                                        , double Salary
+                                       , DateTime JoinDate
                                        , int DepartmentId
-                                       , int ProfessionId) : IRequest<int>
-    {
-    }
+                                       , int ProfessionId) : IRequest<int>;
 }

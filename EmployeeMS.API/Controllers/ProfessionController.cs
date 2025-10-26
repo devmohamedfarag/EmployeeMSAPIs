@@ -14,35 +14,35 @@ namespace EmployeeMS.API.Controllers
     {
 
         [HttpGet]
-        public async Task<IActionResult> GetAllProfessions([FromQuery] GetAllProfessionsQuery query)
+        public async Task<IActionResult> GetAll([FromQuery] GetAllProfessionsQuery query)
         {
             var result = await mediator.Send(query);
             return Ok(result);
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetProfessionById([FromBody] GetProfessionByIdQuery query)
+        public async Task<IActionResult> GetById([FromBody] GetProfessionByIdQuery query)
         {
             var result = await mediator.Send(query);
             return Ok(result);
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateProfession([FromBody] CreateProfessionCommand command)
+        public async Task<IActionResult> Create([FromBody] CreateProfessionCommand command)
         {
             var id = await mediator.Send(command);
             return Ok(new { ProfessionId = id });
         }
 
-        [HttpPut("{id}")]
-        public async Task<IActionResult> UpadteProfession([FromBody] UpdateProfessionCommand command)
+        [HttpPut]
+        public async Task<IActionResult> Upadte([FromBody] UpdateProfessionCommand command)
         {
             var result = await mediator.Send(command);
             return Ok(result);
         }
 
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteProfession([FromBody] DeleteProfessionCommand command)
+        [HttpDelete]
+        public async Task<IActionResult> Delete([FromBody] DeleteProfessionCommand command)
         {
             var result = await mediator.Send(command);
             return Ok(result);

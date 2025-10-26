@@ -168,6 +168,9 @@
   <data name="IdIsGreaterThan0" xml:space="preserve">
     <value>The Id is Greater than zero</value>
   </data>
+  <data name="InvalidPhoneNumberFormat" xml:space="preserve">
+    <value>Invalid phone fumber format</value>
+  </data>
   <data name="LastNameLength" xml:space="preserve">
     <value>Last name is less than or equal to 100 characters</value>
   </data>

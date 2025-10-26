@@ -214,6 +214,15 @@ namespace EmployeeMS.Shared.LocalizationResources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Invalid phone fumber format.
+        /// </summary>
+        public static string InvalidPhoneNumberFormat {
+            get {
+                return ResourceManager.GetString("InvalidPhoneNumberFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Last name is less than or equal to 100 characters.
         /// </summary>
         public static string LastNameLength {

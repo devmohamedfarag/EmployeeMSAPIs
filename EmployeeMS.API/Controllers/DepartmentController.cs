@@ -14,35 +14,35 @@ namespace EmployeeMS.API.Controllers
     public class DepartmentController(IMediator mediator) : ControllerBase
     {
         [HttpGet]
-        public async Task<IActionResult> GetAllDepartments([FromQuery] GetAllDepartmentsQuery query)
+        public async Task<IActionResult> GetAll([FromQuery] GetAllDepartmentsQuery query)
         {
             var result = await mediator.Send(query);
             return Ok(result);
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetDepartmentById([FromRoute] GetDepartmentByIdQuery query)
+        public async Task<IActionResult> GetById([FromBody] GetDepartmentByIdQuery query)
         {
             var result = await mediator.Send(query);
             return Ok(result);
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateDepartment([FromBody] CreateDepartmentCommand command)
+        public async Task<IActionResult> Create([FromBody] CreateDepartmentCommand command)
         {
             var id = await mediator.Send(command);
             return Ok(new { DeparmentId = id });
         }
 
-        [HttpPut("{id}")]
-        public async Task<IActionResult> UbpadteDepartment([FromBody] UpdateDepartmentCommand command)
+        [HttpPut]
+        public async Task<IActionResult> Ubpadte([FromBody] UpdateDepartmentCommand command)
         {
             var result = await mediator.Send(command);
             return Ok(result);
         }
 
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteDepartment([FromRoute] DeleteDepartmentCommand command)
+        [HttpDelete]
+        public async Task<IActionResult> Delete([FromBody] DeleteDepartmentCommand command)
         {
             var result = await mediator.Send(command);
             return Ok(result);
