@@ -1,8 +1,7 @@
-﻿using MediatR;
+﻿using EmployeeMS.Shared.DTOs;
+using MediatR;
 
 namespace EmployeeMS.Application.Features.Departments.Commands.DeleteDepartmentCommand
 {
-    public record DeleteDepartmentCommand(int Id) : IRequest<string>
-    { 
-    }
+    public record DeleteDepartmentCommand(int Id) : IRequest<DeleteDto>;
 }

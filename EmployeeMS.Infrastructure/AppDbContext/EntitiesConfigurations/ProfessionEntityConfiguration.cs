@@ -7,7 +7,6 @@ namespace EmployeeMS.Infrastructure.AppDbContext.EntitiesConfigurations
 {
     public class ProfessionEntityConfiguration : IEntityTypeConfiguration<Profession>
     {
-
         public void Configure(EntityTypeBuilder<Profession> builder)
         {
             builder.HasKey(p => p.Id);
@@ -29,5 +28,4 @@ namespace EmployeeMS.Infrastructure.AppDbContext.EntitiesConfigurations
                    .OnDelete(DeleteBehavior.Restrict);
         }
     }
-
 }

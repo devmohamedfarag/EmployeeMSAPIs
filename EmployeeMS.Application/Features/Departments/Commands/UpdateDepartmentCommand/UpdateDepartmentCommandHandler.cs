@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using EmployeeMS.Application.Dtos.DepartmentDtos;
+using EmployeeMS.Application.Dtos;
 using EmployeeMS.Domain.Interfaces.UnitOfWork;
 using EmployeeMS.Shared.LocalizationResources;
 using MediatR;

@@ -1,12 +1,9 @@
-﻿using EmployeeMS.Application.Dtos.DepartmentDtos;
+﻿using EmployeeMS.Application.Dtos;
 using EmployeeMS.Shared.Wrappers;
 using MediatR;
 
 namespace EmployeeMS.Application.Features.Departments.Queries.GetAllDepartmentsQuery
 {
     public record GetAllDepartmentsQuery(int PageNumber = 1, int PageSize = 10)
-                                                    : IRequest<PagedData<DepartmentDto>>
-    {
-
-    }
+                                                    : IRequest<PagedData<DepartmentDto>>;
 }

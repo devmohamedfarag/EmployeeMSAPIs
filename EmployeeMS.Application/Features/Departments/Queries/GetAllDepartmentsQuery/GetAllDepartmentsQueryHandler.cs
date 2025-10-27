@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using AutoMapper.QueryableExtensions;
-using EmployeeMS.Application.Dtos.DepartmentDtos;
+using EmployeeMS.Application.Dtos;
 using EmployeeMS.Domain.Entities;
 using EmployeeMS.Domain.Interfaces.Repositories;
 using EmployeeMS.Shared.Wrappers;
@@ -27,8 +27,8 @@ namespace EmployeeMS.Application.Features.Departments.Queries.GetAllDepartmentsQ
             return new PagedData<DepartmentDto>
              (
                 departments,
-                request.PageSize,
                 request.PageNumber,
+                request.PageSize,
                 totalCount
              );
         }

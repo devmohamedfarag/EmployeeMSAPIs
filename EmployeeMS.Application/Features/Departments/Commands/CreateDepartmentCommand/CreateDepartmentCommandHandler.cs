@@ -12,8 +12,6 @@ namespace EmployeeMS.Application.Features.Departments.Commands.CreateDepartmentC
         {
             var department = mapper.Map<Department>(request);
 
-            department.CreationDate = DateTime.UtcNow;
-
             await unitOfWork.Departments.AddAsync(department);
             await unitOfWork.Compelete();
 

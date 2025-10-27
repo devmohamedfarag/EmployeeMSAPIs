@@ -1,10 +1,10 @@
-﻿using EmployeeMS.Application.Dtos.DepartmentDtos;
+﻿using EmployeeMS.Application.Dtos;
 using MediatR;
 
 namespace EmployeeMS.Application.Features.Departments.Commands.UpdateDepartmentCommand
 {
-    public record UpdateDepartmentCommand(int Id, string Name, string Description)
-                                                                 : IRequest<DepartmentDto>
-    {
-    }
+    public record UpdateDepartmentCommand(int Id, string Name, string Description, DateTime CreationDate)
+
+
+                                                                 : IRequest<DepartmentDto>;
 }

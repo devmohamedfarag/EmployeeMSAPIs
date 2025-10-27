@@ -1,14 +1,15 @@
 ﻿using AutoMapper;
 using EmployeeMS.Domain.Interfaces.UnitOfWork;
+using EmployeeMS.Shared.DTOs;
 using EmployeeMS.Shared.LocalizationResources;
 using MediatR;
 
 namespace EmployeeMS.Application.Features.Departments.Commands.DeleteDepartmentCommand
 {
     public class DeleteDepartmentCommandHandler(IUnitOfWork unitOfWork, IMapper mapper)
-                                                 : IRequestHandler<DeleteDepartmentCommand, string>
+                                                 : IRequestHandler<DeleteDepartmentCommand, DeleteDto>
     {
-        public async Task<string> Handle(DeleteDepartmentCommand request, CancellationToken cancellationToken)
+        public async Task<DeleteDto> Handle(DeleteDepartmentCommand request, CancellationToken cancellationToken)
         {
             var department = await unitOfWork.Departments.GetByIdAsync(request.Id);
 
@@ -20,8 +21,7 @@ namespace EmployeeMS.Application.Features.Departments.Commands.DeleteDepartmentC
             await unitOfWork.Departments.Delete(department);
             await unitOfWork.Compelete();
 
-            return Resource.DepartmentDeleted;
+            return new DeleteDto { IsDeleted = true };
         }
-
     }
 }
