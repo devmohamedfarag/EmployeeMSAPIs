@@ -24,7 +24,7 @@ namespace EmployeeMS.Application.Features.Employees.Commands.UpdateEmployeeComma
             RuleFor(x => x.PhoneNumber)
                       .NotEmpty().WithMessage(Resource.EmployeePhoneNumberRequired)
                       .MaximumLength(ValidationConstants.PhoneNumberLessThan20).WithMessage(Resource.PhoneNumberLength)
-                      .Matches(@"^\+?[1-9]\d{1,14}$").WithMessage(Resource.InvalidPhoneNumberFormat); 
+                      .Matches(Resource.PhoneNumberFormat).WithMessage(Resource.InvalidPhoneNumberFormat); 
 
             RuleFor(x => x.Salary)
                        .NotNull().WithMessage(Resource.EmployeeSalaryRequired)

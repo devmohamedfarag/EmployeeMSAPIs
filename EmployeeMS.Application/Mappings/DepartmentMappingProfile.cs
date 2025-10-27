@@ -13,6 +13,11 @@ namespace EmployeeMS.Application.Mappings.DepartmentMappingProfiles
             CreateMap<CreateDepartmentCommand, Department>();
             CreateMap<Department, DepartmentDto>();
             CreateMap<UpdateDepartmentCommand, Department>();
+            CreateMap<Department, DepartmentWithEmployeesDto>()
+                .ForMember(dest => dest.DepartmentId, opt => opt.MapFrom(src => src.Id))
+                .ForMember(dest => dest.DepartmentName, opt => opt.MapFrom(src => src.Name))
+                .ForMember(dest => dest.Employees, opt => opt.MapFrom(src => src.Employees));
+
         }
     }
 }

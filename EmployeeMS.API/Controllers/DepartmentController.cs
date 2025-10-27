@@ -3,6 +3,7 @@ using EmployeeMS.Application.Features.Departments.Commands.DeleteDepartmentComma
 using EmployeeMS.Application.Features.Departments.Commands.UpdateDepartmentCommand;
 using EmployeeMS.Application.Features.Departments.Queries.GetAllDepartmentsQuery;
 using EmployeeMS.Application.Features.Departments.Queries.GetDepartmentByIdQuery;
+using EmployeeMS.Application.Features.Departments.Queries.GetDepartmentWithEmployees;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -22,6 +23,13 @@ namespace EmployeeMS.API.Controllers
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById([FromBody] GetDepartmentByIdQuery query)
+        {
+            var result = await mediator.Send(query);
+            return Ok(result);
+        }
+
+        [HttpGet("employees")]
+        public async Task<IActionResult> GetDepartmentWithEmployees([FromQuery] GetDepartmentWithEmployeesQuery query)
         {
             var result = await mediator.Send(query);
             return Ok(result);

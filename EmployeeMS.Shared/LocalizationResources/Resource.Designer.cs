@@ -232,6 +232,15 @@ namespace EmployeeMS.Shared.LocalizationResources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ^\+?[1-9]\d{1,14}$.
+        /// </summary>
+        public static string PhoneNumberFormat {
+            get {
+                return ResourceManager.GetString("PhoneNumberFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Phone number is less than or equal to 20 characters.
         /// </summary>
         public static string PhoneNumberLength {
