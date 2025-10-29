@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using EmployeeMS.Shared.Middelwares;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
@@ -30,10 +31,12 @@ namespace EmployeeMS.Shared
 
         public static IApplicationBuilder UseSharedLayerLocalization(this IApplicationBuilder app)
         {
+            app.UseMiddleware<ExceptionHandlingMiddelware>();
+
             var locOptions = app.ApplicationServices.GetRequiredService<IOptions<RequestLocalizationOptions>>();
             app.UseRequestLocalization(locOptions.Value);
+            
             return app;
-
         }
     }
 }
