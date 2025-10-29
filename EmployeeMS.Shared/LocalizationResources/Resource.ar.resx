@@ -204,4 +204,7 @@
   <data name="SalaryLength" xml:space="preserve">
     <value>المرتب يجب ان يكون اكبر من صفر</value>
   </data>
+  <data name="UnhandledException" xml:space="preserve">
+    <value>حدث خطأ </value>
+  </data>
 </root>
