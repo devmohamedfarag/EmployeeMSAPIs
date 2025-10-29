@@ -204,4 +204,7 @@
   <data name="SalaryLength" xml:space="preserve">
     <value>Salary must be greater than 0</value>
   </data>
+  <data name="UnhandledException" xml:space="preserve">
+    <value>An unhandled exception occurred.</value>
+  </data>
 </root>

@@ -1,4 +1,5 @@
 ﻿using EmployeeMS.Shared.DTOs;
+using EmployeeMS.Shared.LocalizationResources;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using System.Net;
@@ -16,7 +17,7 @@ namespace EmployeeMS.Shared.Middelwares
             }
             catch (Exception exception)
             {
-                logger.LogError(exception, "An unhandled exception occurred.");
+                logger.LogError(exception, Resource.UnhandledException);
                 await HandleExceptionAsync(context, exception);
             }
         }

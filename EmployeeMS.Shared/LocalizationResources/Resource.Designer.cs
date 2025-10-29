@@ -320,5 +320,14 @@ namespace EmployeeMS.Shared.LocalizationResources {
                 return ResourceManager.GetString("SalaryLength", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to An unhandled exception occurred..
+        /// </summary>
+        public static string UnhandledException {
+            get {
+                return ResourceManager.GetString("UnhandledException", resourceCulture);
+            }
+        }
     }
 }
