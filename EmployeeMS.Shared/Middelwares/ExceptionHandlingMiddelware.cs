@@ -31,7 +31,7 @@ namespace EmployeeMS.Shared.Middelwares
                 _ => (int)HttpStatusCode.InternalServerError
             };
 
-            var errorDto = new ErrorDtoint(statusCode, exception.Message);
+            var errorDto = new ErrorDto(statusCode, exception.Message);
 
             var options = new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase };
             var jsonResponse = JsonSerializer.Serialize(errorDto, options);
